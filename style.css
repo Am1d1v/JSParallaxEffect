@@ -47,7 +47,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
 }
 .parallax img {
@@ -55,4 +55,31 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  pointer-events: none;
+}
+
+#text {
+  position: absolute;
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 2px 2px 2px 4px rgb(0, 0, 0);
+}
+
+.content {
+  position: relative;
+  background: #003329;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.content h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.content p {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 300;
 }/*# sourceMappingURL=style.css.map */
